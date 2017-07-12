@@ -3,7 +3,14 @@
 
 //var sphero = require("../../../");
 var sphero = require("sphero");
-var orb = sphero("/dev/tty.Sphero-PBB-AMP-SPP");
+//var orb = sphero("/dev/tty.Sphero-PBB-AMP-SPP");
+//var orb = sphero("/dev/tty.Sphero-PWR-AMP-SPP");
+//var orb = sphero("/dev/tty.Sphero-GOO-AMP-SPP");
+var orb = sphero("/dev/tty.Sphero-WBP-AMP-SPP");
+
+
+
+
 
 
 var TORK = 75;
@@ -38,7 +45,7 @@ function commander(command, param) {
 // Connect Command
 var connect = function () {
     orb.connect(function() {
-        console.log("::SPHERO CONNECTING::");
+        console.log("::SPHERO CONNECTED::");
         orb.color("magenta");
     });
 };
@@ -47,6 +54,20 @@ var connect = function () {
 var disconnect = function () {
     orb.disconnect(function() {
         console.log("::SPHERO DISCONNECTED::");
+    });
+};
+
+// Stop Command
+var disconnect = function () {
+    orb.stop(function() {
+        console.log("::SPHERO STOPPED::");
+    });
+};
+
+// Stop in Disconnect
+var stopOnDisconnect = function () {
+    orb.stopOnDisconnect(function() {
+        console.log("::SPHERO STOP on DISCONNECT:");
     });
 };
 
@@ -99,6 +120,14 @@ var move = function (shape) {
         // Roll Back:
         console.log("Rolling Sphero South");
         orb.roll(75, 180);
+    }
+    
+    // Short Hop
+    if (shape === "hop") {
+        
+        // Roll One Way:
+        console.log("Sphero Hop North");
+        orb.roll(15, 0);//North
     }
     
 
