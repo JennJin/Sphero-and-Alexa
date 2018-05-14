@@ -1,0 +1,159 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "sphere o",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "SpheroColor",
+          "slots": [
+            {
+              "name": "color",
+              "type": "COLORS_Slot"
+            }
+          ],
+          "samples": [
+            "how about {color}",
+            "I want to see {color}",
+            "{color} color",
+            "let's see {color}",
+            "change to {color}"
+          ]
+        },
+        {
+          "name": "SpheroConnect",
+          "samples": [
+            "connect sphero",
+            "connect"
+          ]
+        },
+        {
+          "name": "SpheroDisconnect",
+          "samples": [
+            "disconnect sphero",
+            "disconnect"
+          ]
+        },
+        {
+          "name": "SpheroColorOnly",
+          "slots": [
+            {
+              "name": "color",
+              "type": "COLORS_Slot"
+            }
+          ],
+          "samples": [
+            "{color}"
+          ]
+        },
+        {
+          "name": "SpheroMoveOnly",
+          "slots": [
+            {
+              "name": "shape",
+              "type": "SHAPE_Slot"
+            }
+          ],
+          "samples": [
+            "{shape}"
+          ]
+        },
+        {
+          "name": "SpheroMove",
+          "slots": [
+            {
+              "name": "shape",
+              "type": "SHAPE_Slot"
+            }
+          ],
+          "samples": [
+            "make a {shape}",
+            "draw a {shape}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "yellow"
+              }
+            },
+            {
+              "name": {
+                "value": "aqua"
+              }
+            },
+            {
+              "name": {
+                "value": "purple"
+              }
+            },
+            {
+              "name": {
+                "value": "teal"
+              }
+            },
+            {
+              "name": {
+                "value": "orange"
+              }
+            },
+            {
+              "name": {
+                "value": "green"
+              }
+            },
+            {
+              "name": {
+                "value": "blue"
+              }
+            },
+            {
+              "name": {
+                "value": "red"
+              }
+            }
+          ],
+          "name": "COLORS_Slot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "square"
+              }
+            },
+            {
+              "name": {
+                "value": "triange"
+              }
+            },
+            {
+              "name": {
+                "value": "line"
+              }
+            }
+          ],
+          "name": "SHAPE_Slot"
+        }
+      ]
+    }
+  }
+}
