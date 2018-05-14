@@ -13,7 +13,7 @@ Requirements:
 * Navigate to the 'sphero-server' folder.
 * Run 'npm install' to install the node module dependencies.
 
-### Install Postman and import Sphero Collection
+## Install Postman and import Sphero Collection
 
 Postman is an API development environment that allows developers to run
 adhoc calls/requests to a REST API endpoint.
@@ -21,9 +21,9 @@ adhoc calls/requests to a REST API endpoint.
 -   Install [Postman](https://www.getpostman.com/)
 -   Import the Sphero Collection included in the Repo: Sphero.postman\_collection.json
 
-### Connect to Sphero
+## Connect to Sphero
 
-OSX
+**Mac**
 
 To connect to your Sphero 1.0/2.0 or SPRK, you first need to pair it. To
 pair your device on OS X, open the Bluetooth settings in **System
@@ -42,8 +42,8 @@ is for a Sphero with a Red, Green and Blue (RGB) color code.
 Sphero port will be at:
 
 `/dev/tty.Sphero-XXX-XXX-XXX`
-
-Windows
+  
+**Windows**
 
 To connect to your Sphero 1.0/2.0 or SPRK, you first need to pair it.
 Locate the Bluetooth icon in the taskbar (or inside the system task tray
@@ -78,7 +78,7 @@ The port address should look something like:
 
 `COM2, COM3, COM4`
 
-### Configure Sphero Server
+## Configure Sphero Server
 
 Update `sphero-server/router/core/spheroCore.js` with the Sphero port
 identified from previous step.
@@ -93,30 +93,31 @@ Examples:
 var orb = sphero(\"/dev/tty.Sphero-BRB-AMP-SPP\"); // mac
 var orb = sphero(\"COM3\"); // windows
 ```
+  
+  
+## Start Sphero Server
 
-### Start Sphero Server
-
-To start the server run the command:
+To start the server run the command:  
 
 `sudo node apps.js`
 
-**Test Server:**
-Postman -
+### Test Server
+Postman -  
 GET Test Server
 
-HTTP -
+HTTP -  
 `GET http://localhost:3000/`
 
-Result:
+Result:  
 `Hello this is my web server`
 
-**Test Connection with Sphero:**
+### Test Connection with Sphero
 Make sure computer is connected to Sphero via Bluetooth from *Connecting to Sphero/SPRK* steps from above.
 
-Postman -
+Postman -  
 POST Connect
 
-HTTP -
+HTTP -  
 `POST http://localhost:3000/sphero/connect`
 
 Response printed to Window should be:
@@ -126,21 +127,22 @@ Response printed to Window should be:
 
 Once Sphero is connected, it should turn a solid 'pinkish-purple'.
 
-**Test changing the color:**
-Postman -
-POST Color-Green
+### Test changing the color
 
-HTTP -
+Postman -  
+POST Color-Green  
+
+HTTP -  
 `POST http://localhost:3000/sphero/color/green`
 
-### Start Localhost Tunnel
+## Start Localhost Tunnel
 For this project, we'll use ngrok to create a secure tunnel to the
 Sphero Sever running locally. This removes the complexity and hassle of
 configuring a secure public facing HTTPS server.
 
 [Sign up](https://dashboard.ngrok.com/user/signup) for an account and download [ngrok](https://ngrok.com/).
 
-Start the ngrok secure tunnel:
+Start the ngrok secure tunnel:  
 `ngrok http \<listening port\>`
 
 Example:
