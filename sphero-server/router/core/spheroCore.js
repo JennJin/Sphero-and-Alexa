@@ -4,7 +4,13 @@
 "use strict";
 
 var sphero = require("sphero");
-var orb = sphero("/dev/tty.Sphero-BRB-AMP-SPP");
+
+// *** Configure Sphero Port Here ***
+// var orb = sphero("COM4") //windows
+// var orb = sphero("/dev/tty.Sphero-BRB-AMP-SPP"); // mac
+
+var orb = sphero("<Sphero Port>");
+
 
 function commander(command, param) {
     if (command === "shape") {

@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "0c8c624c-e6ea-4f68-aad3-08c2ea975bb9",
+		"name": "Sphero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Color-Red",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/color/red",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"color",
+						"red"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Connect",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/connect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"connect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disconnect",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/disconnect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"disconnect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Color-Green",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/color/green",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"color",
+						"green"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Color-Blue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/color/blue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"color",
+						"blue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shape-Line",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/shape/line",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"shape",
+						"line"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shape-Triangle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/shape/triangle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"shape",
+						"triangle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shape-Square",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/sphero/shape/square",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sphero",
+						"shape",
+						"square"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
