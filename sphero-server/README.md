@@ -27,14 +27,14 @@ adhoc calls/requests to a REST API endpoint.
 
 To connect to your Sphero 1.0/2.0 or SPRK, you first need to pair it. To
 pair your device on OS X, open the Bluetooth settings in **System
-Preferences** \> **Bluetooth**. From this menu, locate your Sphero in
+Preferences** > **Bluetooth**. From this menu, locate your Sphero in
 the Devices list and click the **Pair** button to pair it with your
 computer.
 
-Once you\'ve successfully paired your Sphero, open your terminal, go to
+Once you've successfully paired your Sphero, open your terminal, go to
 your `/dev` folder and locate the serial device connection (or use `ls -a
-/dev \| grep tty.Sphero`) for your newly paired Sphero; it should look
-something like tty.Sphero-RGB-AMP-SPP. Note, your device will likely be
+/dev | grep tty.Sphero`) for your newly paired Sphero; it should look
+something like `tty.Sphero-RGB-AMP-SPP`. Note, your device will likely be
 different depending on its preset color code (the three colors your
 Sphero cycles through when you first turn it on). The previous example
 is for a Sphero with a Red, Green and Blue (RGB) color code.
@@ -85,13 +85,13 @@ identified from previous step.
 
 Look for line:
 
-`var orb = sphero(\"\<Sphero Port\");`
+`var orb = sphero("<Sphero Port");`
 
 Examples:
 
 ```
-var orb = sphero(\"/dev/tty.Sphero-BRB-AMP-SPP\"); // mac
-var orb = sphero(\"COM3\"); // windows
+var orb = sphero("/dev/tty.Sphero-BRB-AMP-SPP"); // mac
+var orb = sphero("COM3"); // windows
 ```
   
   
@@ -123,7 +123,7 @@ HTTP -
 Response printed to Window should be:
 `::SPHERO CONNECTED::`
 
-*\<Screenshot of Terminal Window\>*
+*<Screenshot of Terminal Window>*
 
 Once Sphero is connected, it should turn a solid 'pinkish-purple'.
 
@@ -143,7 +143,7 @@ configuring a secure public facing HTTPS server.
 [Sign up](https://dashboard.ngrok.com/user/signup) for an account and download [ngrok](https://ngrok.com/).
 
 Start the ngrok secure tunnel:  
-`ngrok http \<listening port\>`
+`ngrok http <listening port>`
 
 Example:
 ```
@@ -160,8 +160,8 @@ Account John Doe
 Version 2.2.8
 Region United States (us)
 Web Interface http://127.0.0.1:4040
-Forwarding http://5d626552.ngrok.io -\> localhost:3000
-Forwarding https://5d626552.ngrok.io -\> localhost:3000
+Forwarding http://5d626552.ngrok.io -> localhost:3000
+Forwarding https://5d626552.ngrok.io -> localhost:3000
 ```
 
 *Note the http forwarding domain created.*
