@@ -51,7 +51,7 @@ Folder Structure will look like:
 ### Component Setup
 
 * [Sphero Local Server](https://github.com/JennJin/Sphero-and-Alexa/tree/master/sphero-server)
-* [Sphero Alexa Skill](https://github.com/JennJin/Sphero-and-Alexa/tree/master/sphero-alexa-skill))
+* [Sphero Alexa Skill](https://github.com/JennJin/Sphero-and-Alexa/tree/master/sphero-alexa-skill)
 
 
 
