@@ -87,9 +87,3 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 3. ```./models/*.json```
 
 	Change the model definition to replace the invocation name and the sample phrase for each intent.  Repeat the operation for each locale you are planning to support.
-
-
-
-## License
-
-
