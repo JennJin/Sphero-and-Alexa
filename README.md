@@ -1,12 +1,14 @@
+<p align="center"><img width='300px' src="https://github.com/orbotix/DeveloperResources/blob/master/art/Sphero%20Logo/sphero-logo-blue.png" /></p>
+<br>
+
 # Sphero and Alexa
-
 Control your Sphero 2.0 using Alexa. Change color and draw shapes just using your voice!
-
+<br>
 ### Project Contents
 
 * Local Sphero Server
 * Sphero Alexa Skill
-
+<br>
 This Project uses:
 
 * [node.js](https://nodejs.org/)
@@ -17,6 +19,7 @@ This Project uses:
 * [ngrok](https://ngrok.com/)
 * [Postman](https://www.getpostman.com)
 
+<hr>
 
 ### Pre-requisites
 
@@ -24,7 +27,7 @@ Hardware:
 
 * Laptop(or desktop) w/ Bluetooth
 * [Sphero 2.0](https://www.sphero.com/sphero)
-
+<br>
 ### Setup
 
 * Register for an [AWS Account](https://aws.amazon.com/)
@@ -32,6 +35,7 @@ Hardware:
 * Configure a named [AWS CLI Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html)  
 * Register for an [Amazon Developer Account](https://developer.amazon.com/)
 * Install and Setup [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
+<br>
 
 ### Get Started
 
@@ -46,7 +50,7 @@ Folder Structure will look like:
   - Sphero.postman_collection.json
   - README.md
 
-
+<br>
 
 ### Component Setup
 
