@@ -27,7 +27,8 @@ Hardware:
 
 * Laptop(or desktop) w/ Bluetooth
 * [Sphero 2.0](https://www.sphero.com/sphero)
-<br>
+<br>  
+
 ### Setup
 
 * Register for an [AWS Account](https://aws.amazon.com/)
